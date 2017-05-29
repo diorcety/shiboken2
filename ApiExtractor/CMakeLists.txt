@@ -1,5 +1,8 @@
 project(apiextractor)
 
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(LibXml2 2.6.32)
 find_package(LibXslt 1.1.19)
 
