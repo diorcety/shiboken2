@@ -140,7 +140,8 @@ QByteArrayList emulatedCompilerOptions()
     const HeaderPaths headerPaths = gppInternalIncludePaths(QStringLiteral("clang++"));
     result.append(noStandardIncludeOption());
 #elif defined(Q_CC_GNU)
-    const HeaderPaths headerPaths = gppInternalIncludePaths(QStringLiteral("g++"));
+    const HeaderPaths headerPaths = gppInternalIncludePaths(QStringLiteral("clang++"));
+    //const HeaderPaths headerPaths = gppInternalIncludePaths(QStringLiteral("g++"));
     result.append(noStandardIncludeOption());
 #else
     const HeaderPaths headerPaths;
